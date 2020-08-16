@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Day18_FHCRezervasyonTest extends TestBase {
+
     @Test
     public void fhcrezervasyonTest() throws InterruptedException {
         driver.get("http://fhctrip-qa.com/admin/RoomReservationAdmin/Create");

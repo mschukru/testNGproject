@@ -28,6 +28,7 @@ public class ConfigReader {
     }
     //OKumak icin static bir method olusturalim
     public static String getProperty(String key){
+
         return properties.getProperty(key);
     }
 
