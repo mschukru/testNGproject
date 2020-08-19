@@ -32,35 +32,21 @@ public class MehmetFhcRezervasyonPage {
     @FindBy(id = "DateEnd")
     public WebElement dateEnd;
 
-    @FindBy(xpath = "//input[@data-val-date='The field DateEnd must be a date.']")
-    public WebElement dateErrorMessaj;
 
     @FindBy(id = "AdultAmount")
     public WebElement adultAmount;
 
-    @FindBy(xpath = "//input[@data-val-number='The field AdultAmount must be a number.']")
-    public WebElement adultErrorMesaj;
-
     @FindBy(id = "ChildrenAmount")
     public WebElement childrenAmount;
 
-    @FindBy(xpath = "//input[@data-val-number='The field ChildrenAmount must be a number.']")
-    public WebElement childErrorMesaj;
-
     @FindBy(id = "ContactNameSurname")
     public WebElement surname;
-
-    @FindBy(id = "ContactNameSurname")
-    public WebElement surnameErrorMesaj;
 
     @FindBy(id = "ContactPhone")
     public WebElement phone;
 
     @FindBy(id = "ContactEmail")
     public WebElement email;
-
-    @FindBy(xpath = "//Input[@title='Please provide correct email address']")
-    public WebElement errorMesaj;
 
     @FindBy(id = "Notes")
     public WebElement notes;
@@ -79,4 +65,40 @@ public class MehmetFhcRezervasyonPage {
 
     @FindBy(xpath = "//button[.='OK']")
     public WebElement okButton;
+
+    @FindBy(xpath = "(//label[@class='error'])[1]")
+    public WebElement userErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[2]")
+    public WebElement roomErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[3]")
+    public WebElement priceError2Mesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[4]")
+    public WebElement dateStartErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[5]")
+    public WebElement dateEndErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[6]")
+    public WebElement adultErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[7]")
+    public WebElement childErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[8]")
+    public WebElement surnameErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[9]")
+    public WebElement phoneErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[10]")
+    public WebElement emailErrorMesaj;
+
+    @FindBy(xpath = "(//label[@class='error'])[11]")
+    public WebElement notesErrorMesaj;
+
+
+
 }

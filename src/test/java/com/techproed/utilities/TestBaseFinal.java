@@ -35,7 +35,7 @@ public class TestBaseFinal {
         driver = Driver.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(ConfigReader.getProperty("fhc_login_url"));
+        //driver.get(ConfigReader.getProperty("fhc_login_url"));
     }
     @AfterMethod(alwaysRun = true)//In AfterMethod, we are getting the screenshots and attaching the report when test fails
     public void tearDownMethod(ITestResult result) throws IOException {
